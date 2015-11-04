@@ -5,8 +5,8 @@ const request = require('requisition')
 const app = require('koa')()
 
 app.use(function*(next) {
+  this.set('Access-Control-Allow-Origin', '*')
   this.set('Access-Control-Allow-Credentials', 'true')
-  this.set('Access-Control-Allow-Origin', 'some-origin')
   this.set('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,others')
   this.set('Access-Control-Allow-Headers', 'Accept,Content-Type,Origin,X-Requested-With,others')
 
