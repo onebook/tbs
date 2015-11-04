@@ -9,7 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "cheerio": "0.19",
-    "koa": "2",
+    "koa": "1",
     "requisition": "1"
   },
   "devDependencies": {
